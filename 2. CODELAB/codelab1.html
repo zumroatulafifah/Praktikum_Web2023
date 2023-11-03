@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codelab 1</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      button {
+        margin: 10px;
+      }
+      label {
+        margin: 10px;
+      }
+      input {
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>PENJUMLAHAN BILANGAN</h1>
+    <form>
+      <label for="bilangan1">Bilangan 1 : </label>
+      <input type="number" id="bilangan1" name="bilangan1" />
+
+      <label for="bilangan2">Bilangan 2 : </label>
+      <input type="number" id="bilangan2" name="bilangan2" />
+      <br />
+      <button type="button" onclick="jumlahkan()">Jumlahkan</button>
+      <button type="button" onclick="resetForm()">Ulang</button>
+    </form>
+    <!-- <p>Hasil Penjumlahan: <span id="hasil"></span></p> -->
+
+    <script>
+      function jumlahkan() {
+        // Mengambil nilai dari input bilangan1 dan bilangan2
+        var bilangan1 = parseFloat(document.getElementById("bilangan1").value);
+        var bilangan2 = parseFloat(document.getElementById("bilangan2").value);
+
+        // Melakukan operasi penjumlahan
+        var hasil = bilangan1 + bilangan2;
+
+        // Menampilkan hasil pada elemen dengan id "hasil"
+        // document.getElementById("hasil").textContent = hasil;
+
+        alert("Hasil Penjumlahan : " + hasil);
+      }
+
+      function resetForm() {
+        // Mengosongkan nilai input bilangan1 dan bilangan2
+        document.getElementById("bilangan1").value = "";
+        document.getElementById("bilangan2").value = "";
+
+        // Mengosongkan hasil
+        // document.getElementById("hasil").textContent = "";
+      }
+    </script>
+  </body>
+</html>
