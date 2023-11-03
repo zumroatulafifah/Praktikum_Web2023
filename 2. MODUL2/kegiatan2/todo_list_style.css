@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  /* background: linear-gradient(135deg, #153677, #4e085f); */
+  background-image: radial-gradient(
+    circle at 50% -20.71%,
+    #ff7f85 0,
+    #ff748c 8.33%,
+    #ff6994 16.67%,
+    #ff5d9c 25%,
+    #ff52a4 33.33%,
+    #ff47ad 41.67%,
+    #f23cb5 50%,
+    #e234be 58.33%,
+    #cf32c8 66.67%,
+    #b935d2 75%,
+    #9f3bdb 83.33%,
+    #7e42e5 91.67%,
+    #514aed 100%
+  );
+  padding: 15px;
+}
+
+.container h1 {
+  text-align: center;
+  color: #002765;
+  padding-bottom: 0;
+}
+
+.todo-app {
+  /* width: 100%; */
+  max-width: 400px;
+  height: 200px;
+  background: #fff;
+  margin: 100px auto 20px;
+  padding: 30px 30px 70px;
+  border-radius: 10px;
+}
+
+.todo-app h2 {
+  color: #002765;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #edeef0;
+  border-radius: 30px;
+  padding-left: 20px;
+  padding-bottom: 5px;
+  margin-bottom: 25px;
+  margin-top: 35px;
+}
+
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  font-weight: 14px;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  background: #90078e;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+.list {
+  /* width: 100%; */
+  max-width: 400px;
+  background: #fff;
+  margin: 15px auto 20px;
+  padding: 20px 30px 70px;
+  border-radius: 10px;
+}
+
+.list h2 {
+  color: #002765;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  border-radius: 20px;
+  margin: 0;
+  padding: 10px;
+  font-size: 12px;
+}
+
+li button {
+  background-color: #90078e;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+li span {
+  flex-grow: 1;
+  white-space: pre-line;
+  /* overflow: hidden; */
+  /* text-overflow: ellipsis; */
+  margin-right: 10px;
+  word-wrap: break-word;
+}
+
+.edit {
+  padding: 5px 10px;
+  margin-right: 5px;
+  background-color: #fe026b;
+}
+
+button .delete {
+  padding: 15px 20px;
+}
