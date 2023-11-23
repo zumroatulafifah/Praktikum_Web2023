@@ -8,7 +8,9 @@ function generator($n)
             echo "HelloWorld\n";
         } elseif ($i % 3 == 0) {
             echo "Hello\n";
-        } elseif ($i % 5 == 0) {
+        } elseif ($i % 6 ==0){
+            echo "Afifah\n";
+        }elseif ($i % 5 == 0) {
             echo "World\n";
         } else {
             echo $i . "\n";
@@ -16,4 +18,4 @@ function generator($n)
     }
 }
 
-generator(15);
+generator(35);
